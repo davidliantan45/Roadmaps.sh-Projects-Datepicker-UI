@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datepicker Static UI Element</title>
+    <style>
+        body 
+            {
+                font-family: 'Courier', serif; 
+            }
+        .input-container {
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            max-width: 150px; 
+            margin: 0 auto;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            font-family: 'Courier', serif;
+            font-size: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+            outline: black;
+        }
+
+        button {
+            padding: 5px;
+            background-color: #bba6dd;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 0 4px 4px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button:hover {
+            background-color: #7c4caf;
+        }
+
+        .calendar {
+            background-color: #BBA6DD;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            max-width: 500px;
+            margin-top: 20px;
+            margin: 0 auto;   
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            width: 14.285%;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #d0bded;;
+        }
+
+        td {
+            height: 60px;
+            background-color: white;
+        }
+
+        .empty {
+            background-color: #e9e9e9;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <div class="input-container">
+            <input type="text" id="date-picker" name="Date Picker" placeholder="dd-mm-yyyy">
+            <button type="button">📅</button>
+        </div>
+    </form>
+
+    <br />
+
+    <div class="calendar">
+        <h2 style = "text-align : center";>July 2002</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td class="empty"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
